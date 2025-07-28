@@ -1,0 +1,249 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.topnav {
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    text-shadow: 4px 4px black;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 25px 40px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+    transition: all 0.4s;
+}
+
+.topnav a:hover {
+    color:aqua;
+}
+
+
+.preindex_body, .index_body {
+    /*
+    background-image: url(images/Untitled\ design.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;  */
+
+
+    background-color: white;
+}
+
+.login_body, .register_body {
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.welcome_text {
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: center;
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    color: #f2f2f2;
+    text-shadow: 4px 4px black;
+    padding: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.welcome {
+    height: 700px;
+    background-image: url(images/Untitled\ design.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+.matthew {
+    text-align: center;
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    font-family: 'Lexend Deca', sans-serif;
+    animation: fade 5s linear;
+}
+
+.events {
+    justify-content: center;
+    background-color: #7c7c7c;
+    padding: 15px 25px; /* Internal spacing */
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+    
+    h3 {
+        padding: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+    }
+
+    h2, h3 , h4 {
+        animation: fade 5s linear;
+    }
+}
+
+.customButton {
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 10px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.4s;
+    animation: fade 0.5s linear;    
+}
+
+.customButton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.customInput {
+    font-family: 'Lexend Deca', sans-serif;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 12px;
+}
+
+.customAddressInput {
+    font-family: 'Lexend Deca', sans-serif;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    width: 200px;
+    font-size: 12px;
+}
+
+.button_container {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.container-login {
+    padding: 30px;
+    justify-content: center;
+
+    .ucf-logo {
+        width: 100px;
+        border-radius: 10px;
+    }
+}
+
+.container-register {
+    padding: 30px;
+    justify-content: center;
+
+    .ucf-logo {
+        width: 100px;
+        border-radius: 10px;
+    }
+
+}
+
+.login {
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 100px;
+    background-color: rgba(93, 137, 198, 0.5);
+    grid-area: login;
+    margin: 0 auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    box-sizing: border-box;
+
+    
+
+    h3 {
+        font-size: clamp(0.875rem, 2vw, 1rem);
+        color: #f2f2f2;
+        text-shadow: 2px 2px black;
+    }
+
+    input {
+        font-size: clamp(0.875rem, 2vw, 1rem);
+    }
+
+    button {
+        font-size: clamp(0.875rem, 2vw, 1rem);
+    }
+
+    a {
+        font-weight: bold;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+    }
+}
+
+
+.register {
+    font-family: 'Lexend Deca', sans-serif;
+    color: #f2f2f2;
+    text-shadow: 2px 2px black;
+    background-color: rgba(93, 137, 198, 0.5);
+    grid-area: register;
+    margin: 0 auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    box-sizing: border-box;
+
+    button {
+        font-size: clamp(0.875rem, 2vw, 1rem);
+    }
+    p {
+        font-size: clamp(0.875rem, 2vw, 1rem);
+        font-weight: bold;
+    }
+}
+
+
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    0% {
+        opacity: 0;
+    }
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+    .register-form input {
+        max-width: 400px;
+        padding: 15px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .register-form input {
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome {
+        height: 550px;
+    }
+}
