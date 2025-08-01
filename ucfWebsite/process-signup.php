@@ -16,7 +16,8 @@ if (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
     die();
 }
 
-if (strlen($_POST["pwd"]) > 8) {
+
+if (strlen($_POST["pwd"]) < 8) {
     echo "<script>
         alert('Password must have atleast 8 characters.');
         window.location.href = 'register.php';

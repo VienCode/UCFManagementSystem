@@ -13,7 +13,7 @@
 
     <div class="topnav">
         <a href="login.php">Back to Login</a>
-        <a href="pre-index.php" class="active">Home</a>          
+        <a href= "pre-index.php" class="active">Home</a>          
     </div>
 
     <div class="container-register">
